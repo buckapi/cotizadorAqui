@@ -1,0 +1,98 @@
+<div class="dz-box style-4">
+    <div class="title-bar align-items-end mb-0">
+        <div class="left">
+            <h4 class="title max-w200">Top servicios</h4>
+        </div>
+        <a >ver todas</a>
+    </div>
+    <div class="swiper dz-category-swiper3 mb-3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let item of categories">
+                <a  
+                   class="category-tag tag-lg"
+                   style="cursor: pointer;"
+
+                   (click)="selectCategory(item[0])"
+                   [ngClass]="{'active': item[0] === config.categorySelected}">
+                  {{ item[1] }}
+                </a>
+              </div>
+              
+        
+        </div>
+    </div>
+    <!-- <div class="row g-3">
+        <div class="col-6">
+            <div class="dz-card">
+                <div class="dz-media">
+                    <a href="product-detail.html">
+                        <img src="assets/images/product/product1/pic1.png" alt="image">	
+                    </a>
+                    <a href="javascript:void(0);" class="item-bookmark">
+                        <i class="feather icon-heart-on"></i>
+                    </a>
+                </div>
+                <div class="dz-content">
+                    <h6 class="title"><a href="product-detail.html">Dog Body Belt</a></h6>
+                    <ul class="dz-meta">
+                        <li class="dz-price">$80<del>$95</del></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="dz-card">
+                <div class="dz-media">
+                    <a href="product-detail.html">
+                        <img src="assets/images/product/product1/pic2.png" alt="image">	
+                    </a>
+                    <a href="javascript:void(0);" class="item-bookmark">
+                        <i class="feather icon-heart-on"></i>
+                    </a>
+                </div>
+                <div class="dz-content">
+                    <h6 class="title"><a href="product-detail.html">Dog Cloths</a></h6>
+                    <ul class="dz-meta">
+                        <li class="dz-price">$80<del>$95</del></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="dz-card">
+                <div class="dz-media">
+                    <a href="product-detail.html">
+                        <img src="assets/images/product/product1/pic3.png" alt="image">	
+                    </a>
+                    <a href="javascript:void(0);" class="item-bookmark">
+                        <i class="feather icon-heart-on"></i>
+                    </a>
+                </div>
+                <div class="dz-content">
+                    <h6 class="title"><a href="product-detail.html">Pet Bed For Dog</a></h6>
+                    <ul class="dz-meta">
+                        <li class="dz-price">$80<del>$95</del></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="dz-card">
+                <div class="dz-media">
+                    <a href="product-detail.html">
+                        <img src="assets/images/product/product1/pic4.png" alt="image">	
+                    </a>
+                    <a href="javascript:void(0);" class="item-bookmark">
+                        <i class="feather icon-heart-on"></i>
+                    </a>
+                </div>
+                <div class="dz-content">
+                    <h6 class="title"><a href="product-detail.html">Dog Chew Toys</a></h6>
+                    <ul class="dz-meta">
+                        <li class="dz-price">$80<del>$95</del></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

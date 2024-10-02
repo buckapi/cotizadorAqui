@@ -1,0 +1,69 @@
+<main class="page-content space-top p-b80">
+    <div class="container p-0 row">
+        <div class="dz-product-preview col-12 col-lg-4 m-b35"
+        [ngClass]="{'col-12': isMobile, 'col-4': !isMobile, 'padding-top-20': !isMobile}">
+ 
+            <div class="swiper product-detail-swiper" style="border-radius: 30px;">
+                <div class="swiper-wrapper" *ngIf="global.clinicSelected">
+                    <div class="swiper-slide" *ngFor="let image of global.clinicSelected?.images">
+                        <div class="dz-media">
+                            <img [src]="image" alt="Imagen de la clínica">
+                            <a class="item-bookmark style-2">
+                                <i class="feather icon-heart-on"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-btn">
+                    <div class="swiper-pagination style-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="dz-product-detail col-12 col-lg-8 m-b35"
+        [ngClass]="{'col-12': isMobile, 'col-8': !isMobile}">
+            <div class="detail-content">
+                <ul class="dz-top-meta mb-2">
+                    <span class="brand-tag">
+                        <h4 class="title">{{global.clinicSelected.full_name}}</h4>
+                    </span>
+                    <li class="dz-review"><i class="feather icon-star-on"></i><span class="r-rating">4.5</span> <span
+                            class="r-status">(470)</span></li>
+                </ul>
+            </div>
+            <div class="item-wrapper">
+                <div class="description">
+                    <h6 class="title font-w600">Description:</h6>
+                    <p class="text-light">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humor.</p>
+                </div>
+                <div class="dz-meta-items">
+                    <div class="dz-price m-r60">
+                        <h6 class="dz-name">Precio de consulta:</h6>
+                        <span class="price">$270<del>$310</del></span>
+                    </div>
+                </div>
+                <div class="product-size">
+                    <h6 class="dz-name">Dias que labora:</h6>
+                    <div class="dz-select-btn">
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio4">
+                        <label class="btn" for="btnradio4">L</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio5" checked>
+                        <label class="btn" for="btnradio5">M</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio6">
+                        <label class="btn" for="btnradio6">M</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio7">
+                        <label class="btn" for="btnradio7">J</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio8">
+                        <label class="btn" for="btnradio8">V</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio8">
+                        <label class="btn" for="btnradio8">S</label>
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio8">
+                        <label class="btn" for="btnradio8">D</label>
+                    </div>
+                </div>
+                <div class="color-filter">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
